@@ -1,15 +1,12 @@
-import React from 'react';
-import Navigation from './Navigation';
+import Navigation from "./Navigation";
 
-const Header = () => {
+function Header() {
   return (
-    <header className="bg-dark text-white p-3">
-      <div className="container d-flex justify-content-between align-items-center">
-        <h1>John Doe</h1>
-        <Navigation />
-      </div>
+    <header>
+      <h1>Meghan McMullen</h1>
+      <Navigation />
     </header>
   );
-};
+}
 
 export default Header;
