@@ -1,9 +1,12 @@
-import Navigation from "./Navigation";
+import React from 'react';
+import Navigation from './Navigation';
 
 function Header() {
   return (
-    <header>
-      <h1>Meghan McMullen</h1>
+    <header className="header">
+      <div className="left-section">
+        <h1 className="header-title">MCMULLEN</h1>
+      </div>
       <Navigation />
     </header>
   );
