@@ -88,6 +88,90 @@ nav a.active {
   font-weight: bold; /* Optional: make the active link bold */
 }
 
+/* Centering the Contact Form */
+.contact-container {
+  display: flex;
+  flex-direction: column; /* Keeps "Contact Me" above the form */
+  align-items: center; /* Centers everything */
+  justify-content: center; /* Centers vertically */
+  height: calc(100vh - 80px - 60px); /* Viewport height minus header & footer */
+  width: 100%;
+}
+
+/* Increase Form Size */
+.contact-form {
+  width: 500px; /* Make the form bigger */
+  max-width: 90%; /* Ensure it stays responsive */
+  padding: 30px; /* More spacing */
+}
+
+/* Center & Enlarge Title */
+.contact-title {
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  color: #C49A6C;
+  font-size: 32px; /* Make "Contact Me" bigger */
+  font-weight: bold;
+  text-align: center; /* Ensure it's centered */
+  margin-bottom: 20px; /* Add space between title & form */
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Inputs and textarea */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0; /* No rounded corners */
+  font-size: 16px;
+  outline: none;
+}
+
+/* Textarea */
+.textarea {
+  resize: none;
+}
+
+/* Error styling */
+.input-error {
+  border-color: red;
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.submit-btn {
+  background-color: #664229;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 25%;
+  display: block; /* Ensures it behaves like a block element */
+  margin: 0 auto; /* Centers it horizontally */
+}
+.submit-btn:hover {
+  background-color: #C49A6C;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #664229;
+  color: white;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Footer styling */
 footer {
@@ -122,3 +206,5 @@ footer {
 .footer a:hover {
   color: #f0f0f0;
 }
+
+
