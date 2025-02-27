@@ -1,14 +1,17 @@
+import resumePDF from "../assets/images/resumesample.pdf"; // Import the PDF
+
 function Resume() {
   return (
-    <section>
-      <h2>Resume</h2>
-      <a href="/path-to-resume.pdf" download>Download Resume</a>
-      <h3>Proficiencies</h3>
+    <section className="resume-section">
+      <a href={resumePDF} download="My_Resume.pdf">Download Resume</a>
+      <h3>Proficiencies:</h3>
       <ul>
         <li>React.js</li>
         <li>Node.js</li>
         <li>Express.js</li>
         <li>PostgreSQL</li>
+        <li>Typescript</li>
+        <li>Inquirer</li>
       </ul>
     </section>
   );

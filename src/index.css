@@ -155,12 +155,226 @@ nav a.active {
   cursor: pointer;
   text-transform: uppercase;
   width: 25%;
-  display: block; /* Ensures it behaves like a block element */
-  margin: 0 auto; /* Centers it horizontally */
+  display: block; 
+  margin: 0 auto; 
 }
 .submit-btn:hover {
   background-color: #C49A6C;
 }
+
+/* Apply Impact font to the entire Resume section */
+.resume-section {
+  text-align: center;
+  padding: 40px;
+}
+
+/* Style the Resume heading */
+.resume-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #664229;
+}
+
+/* Resume section container */
+.resume-section {
+  text-align: center;
+  padding: 50px;
+  background-color: #FFF8E1; /* Soft pastel background */
+  border-radius: 12px; /* Smooth rounded edges */
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 80%;
+  margin: 50px auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Resume section hover effect */
+.resume-section:hover {
+  transform: scale(1.02); /* Slight pop effect */
+}
+
+/* Resume heading */
+.resume-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #C49A6C;
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  letter-spacing: 2px;
+}
+
+/* Download Resume button */
+.resume-section a {
+  display: inline-block;
+  font-size: 1.2rem;
+  background-color: #664229;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.2s ease-in-out;
+}
+
+/* Button hover effect */
+.resume-section a:hover {
+  background-color: #C49A6C;
+  transform: translateY(-2px);
+}
+
+/* Proficiencies heading */
+.resume-section h3 {
+  font-size: 2rem;
+  margin-top: 30px;
+  color: #664229;
+  text-decoration: underline;
+}
+
+/* Proficiencies list */
+.resume-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* List items */
+.resume-section li {
+  font-size: 1.6rem;
+  margin: 12px 0;
+  color: #4d3320;
+  background: rgba(255, 204, 153, 0.3); /* Soft pastel highlight */
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+  min-width: 200px;
+  transition: background 0.3s ease;
+}
+
+/* List item hover */
+.resume-section li:hover {
+  background: rgba(255, 204, 153, 0.6); /* Darker pastel on hover */
+}
+
+/* About Me Section */
+.about-section {
+  text-align: center;
+  padding: 50px;
+  background-color: transparent; /* Blends with the main background */
+  max-width: 80%;
+  margin: 50px auto;
+}
+
+/* About Me Heading */
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #C49A6C;
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  letter-spacing: 2px;
+}
+
+section p {
+  font-family: 'Impact', sans-serif;
+  font-size: 1.8rem; /* Adjust size if needed */
+  text-align: center;
+  color: #4d3320; /* Keeps it readable */
+}
+
+/* Enlarging PNG Image */
+.about-section img {
+  width: 300px; /* Increase size */
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* About Me Paragraph */
+.about-section p {
+  font-family: 'Impact', sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #7A5230; /* A softer brown */
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6); /* Light glow */
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  text-align: center;
+  padding: 50px;
+  background-color: #FFF8E1;
+  max-width: 90%;
+  margin: 50px auto;
+  border-radius: 12px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Portfolio Grid */
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Individual Portfolio Item */
+.portfolio-item {
+  width: 300px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px; /* Optional rounded corners */
+  display: flex;
+  align-items: flex-end; /* Position text at bottom */
+  justify-content: center;
+  padding: 20px;
+  color: white; /* Ensure readability */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+
+/* Portfolio Images */
+.portfolio-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Project Title */
+.portfolio-item h3 {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  color: #ff;
+}
+
+/* Links */
+.portfolio-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.portfolio-links a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #664229;
+  color: white;
+  transition: background 0.3s ease-in-out;
+}
+
+.portfolio-links a:hover {
+  background-color: #C49A6C;
+}
+
 
 /* Footer */
 footer {
