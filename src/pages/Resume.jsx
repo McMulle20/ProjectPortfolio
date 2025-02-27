@@ -1,9 +1,9 @@
-import resumePDF from "../assets/images/resumesample.pdf"; // Import the PDF
-
 function Resume() {
   return (
     <section className="resume-section">
-    <a href="/resumesample.pdf" download>Download Resume</a>
+      <a href="/assets/images/resumesample.pdf" download="resumesample.pdf">
+        Download Resume
+      </a>
       <h3>Proficiencies:</h3>
       <ul>
         <li>React.js</li>
