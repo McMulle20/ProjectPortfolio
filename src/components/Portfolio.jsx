@@ -28,14 +28,14 @@ const projects = [
   {
     title: "Project Five",
     image: "src/assets/images/week1.jpg",
-    deployedLink: "https://your-deployed-app5.com",
-    githubLink: "https://github.com/yourusername/project5",
+    deployedLink: "https://bobc04.github.io/Small-Talk-Weather/",
+    githubLink: "https://github.com/bobc04/Small-Talk-Weather",
   },
   {
     title: "Project Six",
     image: "src/assets/images/week1.jpg",
-    deployedLink: "https://your-deployed-app6.com",
-    githubLink: "https://github.com/yourusername/project6",
+    deployedLink: "https://bobc04.github.io/Small-Talk-Weather/",
+    githubLink: "https://github.com/bobc04/Small-Talk-Weather",
   },
 ];
 
