@@ -11,24 +11,23 @@ body {
   height: 100%;
   padding-bottom: 50px;
   background-color: #FCFFEB;
-} /*Ensure content above the footer does not get overlapped */
+}
 
 /* Header styling */
 header {
   display: flex;
   background-color: #664229;
-  padding: 10px 0;
+  padding: 0 3%; /* Adjust padding for horizontal space */
   align-items: center;
-  height: 80px;
+  height: 80px; /* Match the desired header height */
+  justify-content: space-between; /* Ensure header content is spread out */
 }
 
 /* Left section styling */
 .left-section {
-  flex: 1;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 3%;
 }
 
 /* Style the h1 element */
@@ -41,16 +40,56 @@ header {
   margin: 0;
 }
 
-/* Optional: Styling for the navigation section */
-header nav {
-  flex: 1;
+/* Navigation styling */
+nav {
   display: flex;
-  justify-content: flex-end; /* Align the navigation to the right */
-  margin-top: 10px;
+  justify-content: flex-end; /* Align to the right */
+  align-items: center; /* Center text vertically */
+  height: 100%; /* Ensure it fills the full height of the header */
+}
+
+/* Style the ul element */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Ensure it takes the full width of the container */
+  justify-content: space-evenly; /* Even spacing of the list items */
+  align-items: center; /* Center the list items vertically */
+}
+
+/* Style each li element */
+nav li {
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: white;
+  text-align: center; /* Center text horizontally */
+  display: flex;
+  align-items: center; /* Ensure the text is vertically centered */
+}
+
+/* Style the NavLink elements */
+nav a {
+  text-decoration: none; /* Remove underline */
+  color: white;
+  padding: 5px 15px; /* Add padding for clickable area */
+}
+
+/* Hover effect for the NavLink */
+nav a:hover {
+  color: #f0f0f0; /* Lighter hover color */
+}
+
+/* Navigation styling for active link */
+nav a.active {
+  color: #C49A6C; /* Gold color to highlight active link */
+  font-weight: bold; /* Optional: make the active link bold */
 }
 
 
-/* Full width for the footer */
+/* Footer styling */
 footer {
   width: 100%;
   position: fixed;
